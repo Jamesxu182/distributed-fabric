@@ -1,0 +1,28 @@
+2019-07-15T18:20:09+01:00 - DEBUG Constructed a winston logger with the specified targets:
+	{"consolelogger":{"target":"console","level":"info"},"filelogger":{"target":"daily-rotate-file","level":"debug","filename":"log/caliper-%DATE%.log","datePattern":"YYYY-MM-DD-HH","maxSize":"5m","zippedArchive":true}}
+
+2019-07-15T18:20:09+01:00 - INFO [caliper-flow]: ####### Caliper Test ####### 
+
+2019-07-15T18:20:09+01:00 - INFO [caliper-utils]: Executing command: cd /home/james/Git/dissertation/hyperledger/caliper;docker-compose -f ../fabric/3orgs-raft-network/composer/docker-compose.yml up -d;sleep 10s 
+
+2019-07-15T18:20:23+01:00 - INFO [composer.js]: Initializing target platform configuration 
+
+2019-07-15T18:20:23+01:00 - ERROR [composer.js]: composer.init() failed at initialiseFabric(), 
+	{"code":1,"stdout":"","stderr":"\u001b[33m2019-07-15 17:20:23.662 UTC [main] InitCmd -> WARN 001\u001b[0m CORE_LOGGING_LEVEL is no longer supported, please use the FABRIC_LOGGING_SPEC environment variable\n\u001b[33m2019-07-15 17:20:23.667 UTC [main] SetOrdererEnv -> WARN 002\u001b[0m CORE_LOGGING_LEVEL is no longer supported, please use the FABRIC_LOGGING_SPEC environment variable\n\u001b[34m2019-07-15 17:20:23.668 UTC [channelCmd] InitCmdFactory -> INFO 003\u001b[0m Endorser and orderer connections initialized\nError: rpc error: code = Unavailable desc = transport is closing\n"}
+
+2019-07-15T18:20:23+01:00 - ERROR [composer.js]: composer.init() failed, 
+	{"code":1,"stdout":"","stderr":"\u001b[33m2019-07-15 17:20:23.662 UTC [main] InitCmd -> WARN 001\u001b[0m CORE_LOGGING_LEVEL is no longer supported, please use the FABRIC_LOGGING_SPEC environment variable\n\u001b[33m2019-07-15 17:20:23.667 UTC [main] SetOrdererEnv -> WARN 002\u001b[0m CORE_LOGGING_LEVEL is no longer supported, please use the FABRIC_LOGGING_SPEC environment variable\n\u001b[34m2019-07-15 17:20:23.668 UTC [channelCmd] InitCmdFactory -> INFO 003\u001b[0m Endorser and orderer connections initialized\nError: rpc error: code = Unavailable desc = transport is closing\n"}
+
+2019-07-15T18:20:23+01:00 - ERROR [caliper-flow]: Error: [object Object] 
+
+2019-07-15T18:20:23+01:00 - INFO [demo.js]: [Transaction Info] - Submitted: 0 Succ: 0 Fail:0 Unfinished:0 
+
+2019-07-15T18:20:23+01:00 - INFO [caliper-utils]: Executing command: cd /home/james/Git/dissertation/hyperledger/caliper;docker-compose -f ../fabric/3orgs-raft-network/composer/docker-compose.yml down;(test -z "$(docker ps -aq)") || docker rm $(docker ps -aq) 
+
+2019-07-15T18:20:25+01:00 - INFO [caliper-flow]: 
+
+#######################################
+# Test summary: 0 succeeded, 0 failed #
+#######################################
+ 
+
