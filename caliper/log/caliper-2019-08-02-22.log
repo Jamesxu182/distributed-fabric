@@ -1,0 +1,21 @@
+2019-08-02T22:19:46+00:00 - DEBUG Constructed a winston logger with the specified targets:
+	{"consolelogger":{"target":"console","level":"info"},"filelogger":{"target":"daily-rotate-file","level":"debug","filename":"log/caliper-%DATE%.log","datePattern":"YYYY-MM-DD-HH","maxSize":"5m","zippedArchive":true}}
+
+2019-08-02T22:19:46+00:00 - INFO [caliper-flow]: ####### Caliper Test ####### 
+
+2019-08-02T22:19:46+00:00 - INFO [caliper-utils]: Executing command: cd /home/ubuntu/distributed-fabric/caliper;echo "Begin" 
+
+2019-08-02T22:19:46+00:00 - INFO [composer.js]: Initializing target platform configuration 
+
+2019-08-02T22:19:46+00:00 - ERROR [composer.js]: composer.init() failed at initialiseFabric(), 
+	{"code":1,"stdout":"","stderr":"Error: No such container: peer0.org1.example.com\n"}
+
+2019-08-02T22:19:46+00:00 - ERROR [composer.js]: composer.init() failed, 
+	{"code":1,"stdout":"","stderr":"Error: No such container: peer0.org1.example.com\n"}
+
+2019-08-02T22:19:46+00:00 - ERROR [caliper-flow]: Error: [object Object] 
+
+2019-08-02T22:19:46+00:00 - INFO [demo.js]: [Transaction Info] - Submitted: 0 Succ: 0 Fail:0 Unfinished:0 
+
+2019-08-02T22:19:46+00:00 - INFO [caliper-utils]: Executing command: cd /home/ubuntu/distributed-fabric/caliper;echo "End" 
+
