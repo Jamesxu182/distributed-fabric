@@ -13,8 +13,6 @@ services:
       - ./crypto-config/peerOrganizations/org1.example.com/ca/:/etc/hyperledger/fabric-ca-server-config
     extra_hosts:
         - "orderer.example.com:172.26.5.243"
-        - "ca.org1.example.com:172.26.7.211"
-        - "peer0.org1.example.com:172.26.7.211"
 
   peer0.org1.example.com:
     extends:
@@ -34,6 +32,3 @@ services:
         - ./crypto-config/peerOrganizations/org1.example.com/users:/etc/hyperledger/msp/users
     extra_hosts:
         - "orderer.example.com:172.26.5.243"
-        - "ca.org1.example.com:172.26.7.211"
-        - "peer0.org1.example.com:172.26.7.211"
-
