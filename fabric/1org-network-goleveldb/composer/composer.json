@@ -2,8 +2,8 @@
   "caliper": {
     "blockchain": "composer",
     "command" : {
-      "start": "docker-compose -f ../fabric/1org-network-goleveldb/composer/docker-compose.yml up -d;sleep 3s",
-      "end": "docker-compose -f ../fabric/1org-network-goleveldb/composer/docker-compose.yml down;(test -z \"$(docker ps -aq)\") || docker rm $(docker ps -aq)"
+      "start": "echo \"Begin\"",
+      "end": "echo \"End\""
     }
   },
   "composer": {
@@ -19,7 +19,7 @@
       "tls": false,
       "orderers": {
         "orderer.example.com": {
-          "url": "grpc://localhost:7050",
+          "url": "grpc://172.26.5.243:7050",
           "mspid": "OrdererMSP",
           "mspconfig": "/etc/hyperledger/msp/orderer/tls/ca.crt",
           "hostname": "orderer.example.com",
@@ -28,7 +28,7 @@
       },
       "certificateAuthorities": {
         "ca.org1.example.com": {
-          "url": "http://localhost:7054",
+          "url": "http://172.26.7.211:7054",
           "name": "ca.org1.example.com"
         }
       },
@@ -49,8 +49,8 @@
       ],
       "peers": {
         "peer0.org1.example.com": {
-          "url": "grpc://localhost:7051",
-          "eventUrl": "grpc://localhost:7053",
+          "url": "grpc://172.26.7.211:7051",
+          "eventUrl": "grpc://172.26.7.211:7053",
           "hostname": "peer0.org1.example.com",
           "channels":[
             "composerchannel"
